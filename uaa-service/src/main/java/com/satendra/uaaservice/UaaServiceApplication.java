@@ -1,17 +1,16 @@
-package com.satendra.helloservice;
+package com.satendra.uaaservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-//import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 
 @SpringBootApplication
 @EnableEurekaClient
-//@EnableResourceServer
-public class HelloServiceApplication {
+public class UaaServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloServiceApplication.class, args);
+		SpringApplication.run(UaaServiceApplication.class, args);
 	}
 
 }
